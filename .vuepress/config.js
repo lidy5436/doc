@@ -2,6 +2,7 @@ const days = require('dayjs')
 
 const navbar = require("./navbar");
 const sidebar = require("./sidebar")
+const footer = require('./footer')
 
 module.exports = {
     title: '李东阳的博客',
@@ -25,6 +26,10 @@ module.exports = {
         logo: '/icon.png',
         nav: navbar,
         sidebar: sidebar,
+        footer:footer,
         lastUpdated: '最后更新时间'
+    },
+    markdown:{
+        lineNumbers: true
     }
 }
