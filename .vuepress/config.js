@@ -1,3 +1,5 @@
+const days = require('dayjs')
+
 const navbar = require("./navbar");
 const sidebar = require("./sidebar")
 
@@ -8,14 +10,21 @@ module.exports = {
     plugins: [
         ['vuepress-plugin-code-copy',
             {
-                successText: "复制成功",
-                align: 'top',
+                successText: "复制成功"
+            }
+        ],
+        ['@vuepress/last-updated',
+            {
+                transformer: (timestamp,lang) =>{
+                    return  days(timestamp).format('YYYY-MM-DD HH:mm')
+                }
             }
         ]
     ],
     themeConfig: {
+        logo: '/icon.png',
         nav: navbar,
         sidebar: sidebar,
-        lastUpdated: '最后更新时间:'
+        lastUpdated: '最后更新时间'
     }
 }
