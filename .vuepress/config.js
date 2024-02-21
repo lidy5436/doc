@@ -11,12 +11,9 @@ module.exports = {
     head: [
         ["link", { rel: "icon", href: "/logo.png" }],
     ],
+    cache: false,
     plugins: [
-        ['vuepress-plugin-code-copy',
-            {
-                successText: "复制成功"
-            }
-        ],
+        ['@xiaopanda/vuepress-plugin-code-copy'],
         ['@vuepress/last-updated',
             {
                 transformer: (timestamp,lang) =>{
