@@ -6,6 +6,7 @@ module.exports = [
     {
         text: '后端技术',
         items: [
+            {text:'技巧-开发中使用的一些小技巧',link: '/后端技术/技巧-开发中使用的一些小技巧.md'},
             {text:'防火墙配置-在centos中配置防火墙',link: '/后端技术/防火墙配置-在centos中配置防火墙.md'},
         ]
     },
