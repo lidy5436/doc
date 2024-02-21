@@ -8,6 +8,9 @@ module.exports = {
     title: '李东阳的博客',
     description: '一个专注于开发的个人笔记分享平台',
     lang: 'zh-CN',
+    head: [
+        ["link", { rel: "icon", href: "/logo.png" }],
+    ],
     plugins: [
         ['vuepress-plugin-code-copy',
             {
@@ -23,11 +26,13 @@ module.exports = {
         ]
     ],
     themeConfig: {
-        logo: '/icon.png',
+        logo: '/logo.png',
         nav: navbar,
         sidebar: sidebar,
         footer:footer,
-        lastUpdated: '最后更新时间'
+        lastUpdated: '最后更新时间',
+        repo: 'https://gitee.com/lidy5436',
+        repoLabel: 'Gitee'
     },
     markdown:{
         lineNumbers: true
