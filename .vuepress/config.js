@@ -9,15 +9,16 @@ module.exports = {
     description: '一个专注于开发的个人笔记与知识分享平台',
     lang: 'zh-CN',
     head: [
-        ["link", { rel: "icon", href: "/logo.png" }],
+        ["link", {rel: "icon", href: "/logo.png"}],
     ],
     cache: false,
     plugins: [
+        ['vuepress-plugin-helper-live2d'],
         ['@xiaopanda/vuepress-plugin-code-copy'],
         ['@vuepress/last-updated',
             {
-                transformer: (timestamp,lang) =>{
-                    return  days(timestamp).format('YYYY-MM-DD HH:mm')
+                transformer: (timestamp, lang) => {
+                    return days(timestamp).format('YYYY-MM-DD HH:mm')
                 }
             }
         ]
@@ -26,12 +27,12 @@ module.exports = {
         logo: '/logo.png',
         nav: navbar,
         sidebar: sidebar,
-        footer:footer,
+        footer: footer,
         lastUpdated: '最后更新时间',
         repo: 'https://gitee.com/lidy5436',
         repoLabel: 'Gitee'
     },
-    markdown:{
+    markdown: {
         lineNumbers: true
     }
 }
