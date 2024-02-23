@@ -5,6 +5,7 @@ module.exports = [
             {text:'技巧-开发中使用的一些小技巧',link: '/后端技术/技巧-开发中使用的一些小技巧.md'},
             {text:'笔记-Linux学习笔记',link: '/后端技术/笔记-Linux学习笔记.md'},
             {text:'防火墙配置-在centos中配置防火墙',link: '/后端技术/防火墙配置-在centos中配置防火墙.md'},
+            {text:'SpringBoot项目启动控制台输出访问地址',link: '/后端技术/SpringBoot项目启动控制台输出访问地址.md'},
         ]
     },
     {
