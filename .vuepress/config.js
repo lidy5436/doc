@@ -34,6 +34,6 @@ module.exports = {
         repoLabel: 'Gitee'
     },
     markdown: {
-        lineNumbers: true
+        lineNumbers: false
     }
 }
