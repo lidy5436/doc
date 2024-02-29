@@ -23,6 +23,12 @@ module.exports = [
         ]
     },
     {
+      text: '面试专题',
+      items: [
+          {text: 'Redis相关问题',link: '/面试专题/Redis相关问题.md'}
+      ]
+    },
+    {
         text: '常用书签',
         link: 'http://120.48.99.149:1888/'
     }
