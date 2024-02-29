@@ -23,5 +23,5 @@ features:
 
 
 ::: slot footer
-@2024 李东阳的博客 | [陇ICP备2023004033号-1](https://beian.miit.gov.cn/)
+@2024 李东阳的笔记记录 | [陇ICP备2023004033号-1](https://beian.miit.gov.cn/)
 :::
