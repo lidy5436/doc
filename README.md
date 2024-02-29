@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 李东阳的编程宝典
+heroText: 李东阳的笔记记录
 tagline: 一个专注于开发的个人笔记与知识分享平台
 actionText: Get Started →
 actionLink: /后端技术/防火墙配置-在centos中配置防火墙
