@@ -14,6 +14,7 @@ module.exports = {
     cache: false,
     plugins: [
         ['vuepress-plugin-helper-live2d'],
+        ['vuepress-plugin-right-anchor'],
         ['vuepress-plugin-zooming'],
         ['@xiaopanda/vuepress-plugin-code-copy'],
         ['@vuepress/last-updated',
@@ -28,6 +29,7 @@ module.exports = {
         logo: '/logo.png',
         nav: navbar,
         sidebar: sidebar,
+        sidebarDepth: 0,
         footer: footer,
         lastUpdated: '最后更新时间',
         repo: 'https://gitee.com/lidy5436',
