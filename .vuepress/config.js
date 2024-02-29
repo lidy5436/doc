@@ -5,7 +5,7 @@ const sidebar = require("./sidebar")
 const footer = require('./footer')
 
 module.exports = {
-    title: '李东阳的编程宝典',
+    title: '李东阳的笔记记录',
     description: '一个专注于开发的个人笔记与知识分享平台',
     lang: 'zh-CN',
     head: [
