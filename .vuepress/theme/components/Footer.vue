@@ -1,7 +1,7 @@
 <template>
     <main class="footer">
         <div class="copy-right">
-           <span class="name">@{{`${currentYear} 李东阳的博客 &nbsp; |  &nbsp; `}} </span>
+           <span class="name">@{{`${currentYear} 李东阳的笔记记录 &nbsp; |  &nbsp; `}} </span>
             <a :href="government.href" target="_blank" rel="noreferrer" >
               {{government.name}}
             </a>
