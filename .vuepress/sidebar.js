@@ -13,7 +13,8 @@ module.exports = {
         '技巧-前端小技巧'
     ],
     '/面试专题/': [
-        'Redis相关问题'
+        'Redis相关问题',
+        'MySQL相关问题',
     ]
 }
 
