@@ -27,7 +27,8 @@ module.exports = [
       text: '面试专题',
       items: [
           {text: 'Redis相关问题',link: '/面试专题/Redis相关问题.md'},
-          {text: 'MySQL相关问题',link: '/面试专题/MySQL相关问题.md'}
+          {text: 'MySQL相关问题',link: '/面试专题/MySQL相关问题.md'},
+          {text: 'Java集合相关问题',link: '/面试专题/Java集合相关问题.md'},
       ]
     },
     {

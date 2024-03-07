@@ -16,6 +16,7 @@ module.exports = {
     '/面试专题/': [
         'Redis相关问题',
         'MySQL相关问题',
+        'Java集合相关问题',
     ]
 }
 
