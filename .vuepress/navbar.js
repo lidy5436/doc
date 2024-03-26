@@ -12,6 +12,7 @@ module.exports = [
             {text:'SpringBoot项目启动控制台输出访问地址',link: '/后端技术/SpringBoot项目启动控制台输出访问地址.md'},
             {text:'BigDecimal的基本使用',link: '/后端技术/BigDecimal的基本使用.md'},
             {text:'Stream流的基本使用',link: '/后端技术/Stream流的基本使用.md'},
+            {text:'文件操作工具',link: '/后端技术/文件操作工具.md'},
         ]
     },
     {

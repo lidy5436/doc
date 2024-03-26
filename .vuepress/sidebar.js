@@ -5,7 +5,8 @@ module.exports = {
         '防火墙配置-在centos中配置防火墙',
         'SpringBoot项目启动控制台输出访问地址',
         'BigDecimal的基本使用',
-        'Stream流的基本使用'
+        'Stream流的基本使用',
+        '文件操作工具'
     ],
     '/前端技术/': [
         '数组的常用操作',
