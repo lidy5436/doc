@@ -13,6 +13,7 @@ module.exports = [
             {text:'BigDecimal的基本使用',link: '/后端技术/BigDecimal的基本使用.md'},
             {text:'Stream流的基本使用',link: '/后端技术/Stream流的基本使用.md'},
             {text:'文件操作工具',link: '/后端技术/文件操作工具.md'},
+            {text:'校验规则工具类',link: '/后端技术/校验规则工具类.md'},
         ]
     },
     {
