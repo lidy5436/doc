@@ -32,8 +32,7 @@ module.exports = {
         sidebarDepth: 0,
         footer: footer,
         lastUpdated: '最后更新时间',
-        repo: 'https://gitee.com/lidy5436',
-        repoLabel: 'Gitee'
+        repo: 'https://github.com/lidy5436'
     },
     markdown: {
         lineNumbers: false
