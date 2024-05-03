@@ -47,7 +47,7 @@
 <script>
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
-import Page from '@theme/components/Page.vue'
+import Page from '../components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 import Footer from "../components/Footer.vue";
