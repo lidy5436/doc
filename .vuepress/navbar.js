@@ -14,6 +14,7 @@ module.exports = [
             {text:'Stream流的基本使用',link: '/后端技术/Stream流的基本使用.md'},
             {text:'文件操作工具',link: '/后端技术/文件操作工具.md'},
             {text:'校验规则工具类',link: '/后端技术/校验规则工具类.md'},
+            {text:'问卷星自动化答题',link: '/后端技术/问卷星自动化答题.md'},
         ]
     },
     {
@@ -24,7 +25,8 @@ module.exports = [
             {text:'数组的常用操作',link: '/前端技术/数组的常用操作.md'},
             {text:'案例-代码流星雨',link: '/前端技术/案例-代码流星雨.md'},
             {text:'前端防抖-通过自定义指令实现',link: '/前端技术/前端防抖-通过自定义指令实现.md'},
-            {text:'下拉刷新-在uniapp中的使用',link: '/前端技术/下拉刷新-在uniapp中的使用.md'},
+            {text:'下拉刷新-在uni-app中的使用',link: '/前端技术/下拉刷新-在uni-app中的使用.md'},
+            {text:'uni-app实现crud基础封装',link: '/前端技术/uni-app实现crud基础封装.md'},
         ]
     },
     {
