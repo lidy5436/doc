@@ -32,7 +32,7 @@
     <Page
       v-else
       :sidebar-items="sidebarItems"
-    >
+      :page-sidebar-items="pageSidebarItems">
       <template #top>
         <slot name="page-top" />
       </template>
@@ -41,6 +41,9 @@
         <Footer/>
       </template>
     </Page>
+
+    <PageSidebarToc/>
+
   </div>
 </template>
 
@@ -49,13 +52,15 @@ import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '../components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
-import { resolveSidebarItems } from '../util'
+import { resolveSidebarItems, resolveHeaders } from '../util'
 import Footer from "../components/Footer.vue";
+import PageSidebarToc from "../components/PageSidebarToc.vue";
 
 export default {
   name: 'Layout',
 
   components: {
+    PageSidebarToc,
     Footer,
     Home,
     Page,
@@ -103,6 +108,10 @@ export default {
         this.$site,
         this.$localePath
       )
+    },
+
+    pageSidebarItems () {
+      return resolveHeaders(this.$page)
     },
 
     pageClasses () {
