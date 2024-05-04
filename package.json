@@ -15,7 +15,6 @@
     "@vuepress/theme-default": "^1.9.10",
     "dayjs": "^1.11.10",
     "vuepress-plugin-helper-live2d": "^1.0.2",
-    "vuepress-plugin-right-anchor": "^0.5.5",
     "vuepress-plugin-zooming": "^1.1.8"
   }
 }
