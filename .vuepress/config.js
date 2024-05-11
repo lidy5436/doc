@@ -14,7 +14,6 @@ module.exports = {
     cache: false,
     plugins: [
         ['vuepress-plugin-helper-live2d'],
-        // ['vuepress-plugin-right-anchor'],
         ['vuepress-plugin-zooming'],
         ['@xiaopanda/vuepress-plugin-code-copy'],
         ['@vuepress/last-updated',
