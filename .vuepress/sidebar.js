@@ -17,7 +17,8 @@ module.exports = {
         '案例-代码流星雨',
         '技巧-前端小技巧',
         '下拉刷新-在uni-app中的使用',
-        'uni-app实现crud基础封装'
+        'uni-app实现crud基础封装',
+        '侧拉操作-仿QQ侧拉删除'
     ],
     '/面试专题/': [
         'Redis相关问题',

@@ -27,6 +27,7 @@ module.exports = [
             {text:'前端防抖-通过自定义指令实现',link: '/前端技术/前端防抖-通过自定义指令实现.md'},
             {text:'下拉刷新-在uni-app中的使用',link: '/前端技术/下拉刷新-在uni-app中的使用.md'},
             {text:'uni-app实现crud基础封装',link: '/前端技术/uni-app实现crud基础封装.md'},
+            {text:'侧拉操作-仿QQ侧拉删除',link: '/前端技术/侧拉操作-仿QQ侧拉删除.md'},
         ]
     },
     {
