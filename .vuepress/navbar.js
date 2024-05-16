@@ -15,6 +15,7 @@ module.exports = [
             {text:'文件操作工具',link: '/后端技术/文件操作工具.md'},
             {text:'校验规则工具类',link: '/后端技术/校验规则工具类.md'},
             {text:'问卷星自动化答题',link: '/后端技术/问卷星自动化答题.md'},
+            {text:'异步编程利器CompletableFuture',link: '/后端技术/异步编程利器CompletableFuture.md'},
         ]
     },
     {

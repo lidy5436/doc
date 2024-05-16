@@ -8,6 +8,7 @@ module.exports = {
         'Stream流的基本使用',
         '文件操作工具',
         '校验规则工具类',
+        '异步编程利器CompletableFuture',
         '问卷星自动化答题'
     ],
     '/前端技术/': [
