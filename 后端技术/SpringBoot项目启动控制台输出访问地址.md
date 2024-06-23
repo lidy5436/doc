@@ -115,4 +115,4 @@ public class Application {
 
 ## 3、效果展示
 
-![](./img/20240223002.jpg)
+![image-20240623145147685](https://lidy-1300763668.cos.ap-nanjing.myqcloud.com/image/202406231451756.png)

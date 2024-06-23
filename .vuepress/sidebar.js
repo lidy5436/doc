@@ -9,8 +9,7 @@ module.exports = {
         '文件操作工具',
         '校验规则工具类',
         '异步编程利器CompletableFuture',
-        'SpringBoot发送邮件',
-        '问卷星自动化答题'
+        'SpringBoot发送邮件'
     ],
     '/前端技术/': [
         '数组的常用操作',
