@@ -46,47 +46,50 @@ spring:
 创建一个服务类用于发送邮件。
 
 ```java
-package com.example;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.thymeleaf.context.Context;
-
-import javax.mail.MessagingException;
-
-@RestController
-public class EmailController {
-
-    // 自动注入EmailService
-    @Autowired
-    private MailService mailService;
-
-    /**
-     * 发送邮件的端点
-     * @param to 收件人邮箱地址
-     * @param subject 邮件主题
-     * @return 发送结果
-     */
-    @GetMapping("/send-email")
-    public String sendEmail(@RequestParam String to, @RequestParam String subject) {
-        Context context = new Context();
-        context.setVariable("name", "张三");
-        context.setVariable("event", "日常聚会");
-        context.setVariable("location", "欢乐广场");
-        context.setVariable("date", "2024-06-23");
-        context.setVariable("time", "19:30");
-        context.setVariable("image","background");
-        String message = null;
-        try {
-            mailService.sendSimpleMail(to,subject,"invitationTemplate",context);
-            message = "邮件发送成功";
-        }catch (MessagingException e) {
-            message = "邮件发送失败";
-        }
-        return message;
-    }
+package com.example;  
+  
+import org.springframework.beans.factory.annotation.Autowired;  
+import org.springframework.beans.factory.annotation.Value;  
+import org.springframework.core.io.ClassPathResource;  
+import org.springframework.core.io.Resource;  
+import org.springframework.mail.SimpleMailMessage;  
+import org.springframework.mail.javamail.JavaMailSender;  
+import org.springframework.mail.javamail.MimeMessageHelper;  
+import org.springframework.stereotype.Service;  
+import org.thymeleaf.context.Context;  
+import org.thymeleaf.spring5.SpringTemplateEngine;  
+  
+import javax.mail.MessagingException;  
+import javax.mail.internet.MimeMessage;  
+import java.io.File;  
+  
+@Service  
+public class MailService {  
+  
+    @Autowired  
+    private JavaMailSender mailSender;  
+  
+    @Value("${spring.mail.username}")  
+    private String username;  
+    @Autowired  
+    private SpringTemplateEngine templateEngine;  
+  
+  
+    public void sendSimpleMail(String to, String subject, String templateName, Context context) throws MessagingException {  
+        MimeMessage message = mailSender.createMimeMessage();  
+        MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");  
+  
+        String htmlContent = templateEngine.process(templateName, context);  
+        helper.setTo(to);  
+        helper.setSubject(subject);  
+        helper.setText(htmlContent, true);  
+        helper.setFrom(username);  
+  
+        String imagePath = "templates/assist/background.jpg";  
+        Resource resource = new ClassPathResource(imagePath);  
+        helper.addInline("background", resource);  
+        mailSender.send(message);  
+    }  
 }
 
 ```
