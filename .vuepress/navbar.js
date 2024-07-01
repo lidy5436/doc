@@ -16,6 +16,10 @@ module.exports = [
             {text: '校验规则工具类', link: '/后端技术/校验规则工具类.md'},
             {text: '异步编程利器CompletableFuture', link: '/后端技术/异步编程利器CompletableFuture.md'},
             {text: 'SpringBoot发送邮件', link: '/后端技术/SpringBoot发送邮件.md'},
+            {text: 'MySQL多ID关联查询', link: '/后端技术/MySQL多ID关联查询.md'},
+            {text: 'MySQL添加联合索引', link: '/后端技术/MySQL添加联合索引.md'},
+            {text: '将一个表的数据插入到另一个表中', link: '/后端技术/将一个表的数据插入到另一个表中.md'},
+            {text: '批量修改文件名', link: '/后端技术/批量修改文件名.md'},
         ]
     },
     {
